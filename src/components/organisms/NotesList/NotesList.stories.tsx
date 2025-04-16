@@ -1,7 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import NotesList, { type Note } from "./NotesList";
+import NotesList from "./NotesList";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid"
+import type { Note } from "../../../types/types";
 
 const meta = {
     component: NotesList
@@ -24,6 +25,15 @@ export const WithNotes: Story = {
         return <NotesList
             notes={notes}
             onDelete={handleDelete}
+        />
+    }
+}
+
+export const Empty: Story = {
+    render: () => {
+        return <NotesList
+            notes={[]}
+            onDelete={() => { }}
         />
     }
 }

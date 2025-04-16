@@ -1,11 +1,6 @@
 import { FC } from "react";
 import Button from "../../atoms/Button/Button";
-
-export type Note = {
-    id: string;
-    title: string;
-    content: string;
-}
+import type { Note } from "../../../types/types";
 
 type NoteListProps = {
     notes: Note[];
