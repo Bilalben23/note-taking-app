@@ -1,12 +1,11 @@
+import Button from "@/components/atoms/Button/Button";
+import type { Note } from "@/shared-types/note.types";
 import { FC } from "react";
-import Button from "../../atoms/Button/Button";
-import type { Note } from "../../../types/types";
 
 type NoteListProps = {
     notes: Note[];
     onDelete: (id: string) => void
 }
-
 
 const NotesList: FC<NoteListProps> = ({ notes, onDelete }) => {
 

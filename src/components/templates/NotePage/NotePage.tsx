@@ -1,8 +1,8 @@
+import NoteForm from "@/components/molecules/NoteForm/NoteForm";
+import NotesList from "@/components/organisms/NotesList/NotesList";
+import type { Note } from "@/shared-types/note.types";
 import { FC, FormEvent, useState } from "react";
-import type { Note } from "../../../types/types";
 import { v4 as uuidv4 } from "uuid";
-import NoteForm from "../../molecules/NoteForm/NoteForm";
-import NotesList from "../../organisms/NotesList/NotesList";
 
 
 const NotePage: FC = () => {

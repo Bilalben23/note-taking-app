@@ -1,10 +1,8 @@
-import React from 'react';
+import Note from "./pages/Note";
 
 const App = () => {
   return (
-    <div>
-      App goes here
-    </div>
+    <Note />
   );
 }
 

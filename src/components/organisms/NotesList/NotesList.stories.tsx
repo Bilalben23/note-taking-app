@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import NotesList from "./NotesList";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid"
-import type { Note } from "../../../types/types";
+import { Note } from "@/shared-types/note.types";
 
 const meta = {
     component: NotesList

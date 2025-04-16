@@ -1,6 +1,6 @@
+import Button from "@/components/atoms/Button/Button";
+import Input from "@/components/atoms/Input/Input";
 import { ChangeEvent, FC, FormEvent } from "react";
-import Input from "../../atoms/Input/Input";
-import Button from "../../atoms/Button/Button";
 
 type NoteFormProps = {
     title: string;
