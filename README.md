@@ -117,4 +117,10 @@ MIT License
 
 ---
 
+## 🚀 Live Demo
+
+## 👉 [View the live app here](https://note-taking-app-neon.vercel.app/)
+
+---
+
 > Built with ❤️ using React, Storybook, Tailwind, and DaisyUI
