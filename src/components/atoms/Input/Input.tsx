@@ -1,6 +1,5 @@
 import { ChangeEvent, FC } from "react";
 
-
 type InputProps = {
     value: string;
     onChange: (e: ChangeEvent<HTMLInputElement>) => void;

@@ -10,7 +10,7 @@ const meta = {
 } satisfies Meta<typeof Button>;
 export default meta;
 
-type Story = StoryObj<typeof meta>;
+type Story = StoryObj<typeof Button>;
 
 export const Primary: Story = {
     args: {
@@ -50,10 +50,12 @@ export const Reset: Story = {
 
 export const WithIcon: Story = {
     args: {
-        children: <>
+        variant: "error",
+    },
+    render: (args) => {
+        return <Button {...args} >
             <Trash2 />
             Delete
-        </>,
-        variant: "primary"
+        </Button>
     }
 }
